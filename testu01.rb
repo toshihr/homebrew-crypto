@@ -23,11 +23,11 @@ class Testu01 < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
-    #system "make", "install" # if this fails, try separate make/make install steps
-    system "make"
-    lib.install "lib/libtestu01.a"
-    lib.install "libmylib.a"
-    lib.install "libprobdist.a"
+    system "make", "install" # if this fails, try separate make/make install steps
+    # system "make"
+    # lib.install "lib/libtestu01.a"
+    # lib.install "libmylib.a"
+    # lib.install "libprobdist.a"
   end
 
   test do
